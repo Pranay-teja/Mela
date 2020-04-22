@@ -10,6 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "books")
@@ -21,13 +22,19 @@ public class Book implements Serializable {
 
     @Id
     @Column(name = "book_id")
-    public Long id;
+    private Long bookId;
+
+//    @Column(name = "user_id")
+//    private Long user_id;
 
     @Column(name = "book_title")
     private String title;
 
-    @Column(name = "book_genre")
-    private String genre;
+//    @Column(name = "book_genre")
+//    private String genre;
+//
+//    @Column(name = "date_added")
+//    private LocalDate date;
 
 
 }
